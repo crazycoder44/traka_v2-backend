@@ -7,3 +7,4 @@ mysql-connector-python
 python-decouple
 python-dotenv
 djangorestframework-simplejwt
+gunicorn
