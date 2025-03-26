@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://traka_v2-backend.railway.internal',]
+ALLOWED_HOSTS = ['localhost', 'http://127.0.0.1:5500', 'https://traka_v2-backend.railway.internal',]
 
 
 # Application definition
@@ -158,7 +158,7 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",  # Replace with your frontend URL
-    "https://traka_v2-backend.railway.internal",
+    "https://trakav2-backend-production.up.railway.app",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -171,5 +171,8 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOWED_METHODS = [
     "GET", "POST", "PUT", "DELETE", "OPTIONS"
 ]
+
+CORS_ALLOW_CREDENTIALS = True
+
 
 # CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:5500']
