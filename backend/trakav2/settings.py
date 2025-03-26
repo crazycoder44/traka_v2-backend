@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'http://127.0.0.1:5500',]
+ALLOWED_HOSTS = ['localhost', 'http://127.0.0.1:5500', 'https://trakav2-backend-production.up.railway.app',]
 
 
 # Application definition
