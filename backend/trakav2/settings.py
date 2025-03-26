@@ -156,10 +156,10 @@ SIMPLE_JWT = {
     'SIGNING_KEY': config('JWT_SECRET_KEY'),  # Secret key for signing JWT (replace with your actual secret key)
 }
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://127.0.0.1:5500",  # Replace with your frontend URL
-#     "https://trakav2-backend-production.up.railway.app",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:5500",  # Replace with your frontend URL
+    "https://trakav2-backend-production.up.railway.app",
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -175,4 +175,4 @@ CORS_ALLOWED_METHODS = [
 CORS_ALLOW_CREDENTIALS = True
 
 
-# CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:5500']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:5500']
