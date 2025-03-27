@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'http://127.0.0.1:5500', 'https://trakav2-backend-production.up.railway.app',]
+ALLOWED_HOSTS = ['trakav2-backend-production.up.railway.app', 'localhost', 'http://127.0.0.1:5500',]
 
 
 # Application definition
@@ -175,4 +175,6 @@ CORS_ALLOWED_METHODS = [
 CORS_ALLOW_CREDENTIALS = True
 
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:5500']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:5500',
+                        'https://trakav2-backend-production.up.railway.app',
+]
